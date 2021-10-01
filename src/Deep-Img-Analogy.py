@@ -18,6 +18,9 @@ import torch.nn.functional as F
 from torch import optim
 import torch.utils.model_zoo as model_zoo
 import cv2
+for k, v in os.environ.items():
+    if k.startswith("QT_") and "cv2" in v:
+        del os.environ[k]
 import torchvision
 from torchvision import transforms
 from torchvision.utils import make_grid
