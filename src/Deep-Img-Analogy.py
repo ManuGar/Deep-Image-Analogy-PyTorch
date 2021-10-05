@@ -31,6 +31,9 @@ from src.models import VGG19
 from src import Utils
 from src.PatchMatch import PatchMatchOrig
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
+
 
 
 import scipy
